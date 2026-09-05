@@ -8,27 +8,27 @@
 
 <!-- PLACEHOLDER SITE: all copy, credits, names, and links below are samples.
      Replace with Nick's real bio, credits, reel links, and contact details
-     before publishing. -->
+     before publishing. Visual system is deliberately styled after
+     bymonolog.com (monochrome, oversized display type, stacked case
+     studies) at the user's request. -->
 
 <link rel="icon" href="data:,">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="noise-overlay" aria-hidden="true"></div>
-
 <header class="site-header" id="top">
   <div class="wrap header-inner">
-    <a class="brand" href="#top">NICK<span>CASSIDY</span></a>
+    <a class="brand" href="#top">Nick Cassidy</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <nav class="nav" id="mainNav">
       <a href="#work">Work</a>
-      <a href="#about">About</a>
       <a href="#services">Services</a>
-      <a href="#contact" class="nav-cta">Get in Touch</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="nav-cta">Start a project <span class="arrow-chip">&#8599;</span></a>
     </nav>
   </div>
 </header>
@@ -36,220 +36,322 @@
 <main>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg" aria-hidden="true">
-      <svg class="waveform" viewBox="0 0 1200 200" preserveAspectRatio="none">
-        <polyline points="0,100 20,100 35,60 50,140 65,40 80,160 95,80 110,120 125,50 140,150 155,90 170,110 185,70 200,130 215,100 230,60 245,140 260,40 275,160 290,80 305,120 320,50 335,150 350,90 365,110 380,70 395,130 410,100 425,60 440,140 455,40 470,160 485,80 500,120 515,50 530,150 545,90 560,110 575,70 590,130 605,100 620,60 635,140 650,40 665,160 680,80 695,120 710,50 725,150 740,90 755,110 770,70 785,130 800,100 815,60 830,140 845,40 860,160 875,80 890,120 905,50 920,150 935,90 950,110 965,70 980,130 995,100 1010,60 1025,140 1040,40 1055,160 1070,80 1085,120 1100,50 1115,150 1130,90 1145,110 1160,70 1175,130 1200,100" />
-      </svg>
-    </div>
-    <div class="wrap hero-inner">
-      <p class="eyebrow">Composer &amp; Music Producer</p>
-      <h1>Original music for<br><span class="accent">commercials, TV &amp; sports.</span></h1>
-      <p class="hero-sub">Nick Cassidy writes and produces custom scores, themes, and sound design for brands, broadcasters, and studios — from 15‑second spots to full episodic underscore.</p>
-      <div class="hero-actions">
-        <a href="#work" class="btn btn-primary">View the Reel</a>
-        <a href="#contact" class="btn btn-ghost">Start a Project</a>
+  <section class="hero on-ink grain">
+    <div class="wrap">
+      <div class="hero-intro">
+        <div class="hero-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M2 12c2-5 4-5 5 0s3 5 5 0 3-5 5 0 3 5 5 0" />
+          </svg>
+        </div>
+        <p class="hero-manifesto">Original music for the moments that need to land in seconds.</p>
       </div>
-      <div class="hero-logos" aria-label="Selected clients (placeholder)">
-        <span>Featured on / with:</span>
-        <div class="logo-row">
-          <span class="logo-chip">Regional Sports Network</span>
-          <span class="logo-chip">National Bank Co.</span>
-          <span class="logo-chip">Streaming Studio</span>
-          <span class="logo-chip">Athlete Apparel Co.</span>
+
+      <h1 class="hero-wordmark"><span>NICK</span><span>CASSIDY</span></h1>
+
+      <div class="hero-body">
+        <div class="hero-copy">
+          <p>Composers who can write anything get hired occasionally. Composers who can write exactly what a 30&#8209;second spot needs, on deadline, get hired again.</p>
+          <p>Most of the work you've heard between plays and pre-roll never got a credit. I write and produce the score, themes, and sound design that make brands, broadcasters, and studios sound as sharp as they look.</p>
+          <div class="byline">
+            <div class="byline-photo" role="img" aria-label="Placeholder headshot of Nick Cassidy"></div>
+            <div class="byline-text">
+              <strong>Nick Cassidy</strong>
+              <span>Composer &amp; Music Producer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-panel">
+          <hr class="rule hero-divider" />
+          <div class="stat-pager">
+            <span>SELECTED NUMBERS</span>
+            <div class="pager-arrows">
+              <button type="button" id="statPrev" aria-label="Previous stat">&#8592;</button>
+              <button type="button" id="statNext" aria-label="Next stat">&#8594;</button>
+            </div>
+          </div>
+          <div id="statDisplay">
+            <p class="stat-num" id="statNum">300+</p>
+            <p class="stat-desc" id="statDesc">Original cues written for commercials, broadcast opens, and streaming series.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="wrap about-inner">
-      <div class="about-photo" role="img" aria-label="Placeholder portrait of Nick Cassidy">
-        <span>Photo</span>
-      </div>
-      <div class="about-copy">
-        <p class="section-label">About</p>
-        <h2>Hi, I'm Nick.</h2>
-        <p>I'm a composer and producer based in [City, State], writing music for the moments that need to land in seconds — a commercial hook, a broadcast open, a walk-off shot. Over the last [X] years I've scored campaigns for regional and national brands, themes for sports broadcasts, and cues for television.</p>
-        <p>My background spans orchestral, hybrid-electronic, and modern pop/rock production, so every project gets a sound built for its brief instead of a preset. I work fast, take notes well, and deliver stems and mixes ready for broadcast.</p>
-        <ul class="about-tags">
-          <li>Orchestral &amp; Hybrid Scoring</li>
-          <li>Sound Design</li>
-          <li>Broadcast Themes</li>
-          <li>Song Licensing</li>
-          <li>Mixing &amp; Mastering</li>
-        </ul>
+      <div class="eyebrow-dot logos-eyebrow">Brands I've worked with</div>
+      <div class="logo-grid">
+        <div class="logo-cell"><span>Regional Sports Network</span></div>
+        <div class="logo-cell"><span>National Bank Co.</span></div>
+        <div class="logo-cell"><span>Streaming Studio</span></div>
+        <div class="logo-cell"><span>Athlete Apparel Co.</span></div>
+        <div class="logo-cell"><span>Metro Transit Authority</span></div>
+        <div class="logo-cell"><span>Downtown Arts Festival</span></div>
       </div>
     </div>
   </section>
 
-  <!-- WORK / PORTFOLIO -->
-  <section class="work" id="work">
+  <!-- STATEMENT -->
+  <section class="statement on-ink grain">
     <div class="wrap">
-      <p class="section-label">Selected Work</p>
-      <h2>Portfolio</h2>
-      <p class="section-sub">A sample of commercials, TV, and sports segments. Replace thumbnails with real reel clips or YouTube/Vimeo embeds.</p>
+      <div class="statement-media">
+        <div class="statement-headline">
+          <span>MUSIC THAT</span>
+          <span>LANDS IN SECONDS</span>
+        </div>
+      </div>
+      <p class="statement-copy">A commercial has three seconds to earn attention. A broadcast open has less. I write and produce the score, themes, and sound design that make those seconds count &mdash; then deliver it broadcast-ready, on your timeline.</p>
+    </div>
+  </section>
 
-      <div class="filters" role="tablist" aria-label="Filter portfolio">
-        <button class="filter-btn is-active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="commercial">Commercials</button>
-        <button class="filter-btn" data-filter="tv">TV</button>
-        <button class="filter-btn" data-filter="sports">Sports</button>
+  <!-- ABOUT + WORK (paper) -->
+  <section class="work-section on-paper" id="work">
+    <div class="wrap">
+
+      <div class="about-block">
+        <div class="about-photo" role="img" aria-label="Placeholder portrait of Nick Cassidy">Photo</div>
+        <div class="about-copy">
+          <h2>Hi, I'm Nick.</h2>
+          <p>I'm a composer and producer based in [City, State], writing music for the moments that need to land fast &mdash; a commercial hook, a broadcast open, a walk-off shot. Over the last [X] years I've scored campaigns for regional and national brands, themes for sports broadcasts, and cues for television.</p>
+          <p>My background spans orchestral, hybrid-electronic, and modern pop/rock production, so every project gets a sound built for its brief instead of a preset. I work fast, take notes well, and deliver stems and mixes ready for broadcast.</p>
+          <ul class="about-tags">
+            <li>Orchestral &amp; Hybrid Scoring</li>
+            <li>Sound Design</li>
+            <li>Broadcast Themes</li>
+            <li>Song Licensing</li>
+            <li>Mixing &amp; Mastering</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="grid" id="portfolioGrid">
+      <div class="work-head">
+        <div class="eyebrow-dot">Selected Work</div>
+        <h2>Portfolio</h2>
+        <p>A sample of commercials, TV, and sports segments below. Replace media placeholders with real reel clips or YouTube/Vimeo embeds.</p>
+      </div>
 
-        <article class="card" data-cat="commercial">
-          <div class="card-media">
-            <button class="play-btn" aria-label="Play placeholder video">▶</button>
-          </div>
-          <div class="card-body">
-            <span class="card-tag">Commercial</span>
+      <div class="case-list">
+
+        <article class="case-item">
+          <div class="case-media"><button class="play-btn" aria-label="Play placeholder video">&#9654;</button></div>
+          <div class="case-body">
+            <span class="meta-tag">CM <span class="ctr">01/06</span></span>
             <h3>Summer Campaign Anthem</h3>
-            <p>Client: Regional Sports Network · 2025</p>
+            <p>Original campaign anthem for a multi-market summer push. Client: Regional Sports Network &middot; 2025</p>
+            <div class="case-stat">
+              <span class="pill">3</span>
+              <p>Edited lengths delivered &mdash; :30, :15, :06 &mdash; from one original score.</p>
+            </div>
           </div>
         </article>
 
-        <article class="card" data-cat="tv">
-          <div class="card-media">
-            <button class="play-btn" aria-label="Play placeholder video">▶</button>
-          </div>
-          <div class="card-body">
-            <span class="card-tag">TV</span>
+        <article class="case-item">
+          <div class="case-media"><button class="play-btn" aria-label="Play placeholder video">&#9654;</button></div>
+          <div class="case-body">
+            <span class="meta-tag">TV <span class="ctr">02/06</span></span>
             <h3>Late Night Series Theme</h3>
-            <p>Client: Streaming Studio · 2024</p>
+            <p>Opening theme for a late-night streaming series. Client: Streaming Studio &middot; 2024</p>
+            <div class="case-stat">
+              <span class="pill">48HR</span>
+              <p>Turnaround from brief to broadcast-ready theme.</p>
+            </div>
           </div>
         </article>
 
-        <article class="card" data-cat="sports">
-          <div class="card-media">
-            <button class="play-btn" aria-label="Play placeholder video">▶</button>
-          </div>
-          <div class="card-body">
-            <span class="card-tag">Sports</span>
+        <article class="case-item">
+          <div class="case-media"><button class="play-btn" aria-label="Play placeholder video">&#9654;</button></div>
+          <div class="case-body">
+            <span class="meta-tag">SP <span class="ctr">03/06</span></span>
             <h3>Championship Broadcast Open</h3>
-            <p>Client: National Sports Network · 2024</p>
+            <p>Open and bumper package for a national championship broadcast. Client: National Sports Network &middot; 2024</p>
+            <div class="case-stat">
+              <span class="pill">12</span>
+              <p>Regional affiliates carrying the broadcast open.</p>
+            </div>
           </div>
         </article>
 
-        <article class="card" data-cat="commercial">
-          <div class="card-media">
-            <button class="play-btn" aria-label="Play placeholder video">▶</button>
-          </div>
-          <div class="card-body">
-            <span class="card-tag">Commercial</span>
+        <article class="case-item">
+          <div class="case-media"><button class="play-btn" aria-label="Play placeholder video">&#9654;</button></div>
+          <div class="case-body">
+            <span class="meta-tag">CM <span class="ctr">04/06</span></span>
             <h3>Holiday Retail Spot</h3>
-            <p>Client: National Bank Co. · 2023</p>
+            <p>Original score for a national holiday retail campaign. Client: National Bank Co. &middot; 2023</p>
+            <div class="case-stat">
+              <span class="pill">4WK</span>
+              <p>National flight across TV and streaming.</p>
+            </div>
           </div>
         </article>
 
-        <article class="card" data-cat="sports">
-          <div class="card-media">
-            <button class="play-btn" aria-label="Play placeholder video">▶</button>
-          </div>
-          <div class="card-body">
-            <span class="card-tag">Sports</span>
+        <article class="case-item">
+          <div class="case-media"><button class="play-btn" aria-label="Play placeholder video">&#9654;</button></div>
+          <div class="case-body">
+            <span class="meta-tag">SP <span class="ctr">05/06</span></span>
             <h3>Halftime Highlight Reel</h3>
-            <p>Client: Athlete Apparel Co. · 2023</p>
+            <p>Score for a broadcast and social highlight package. Client: Athlete Apparel Co. &middot; 2023</p>
+            <div class="case-stat">
+              <span class="pill">2.1M</span>
+              <p>Views across broadcast and social cutdowns.</p>
+            </div>
           </div>
         </article>
 
-        <article class="card" data-cat="tv">
-          <div class="card-media">
-            <button class="play-btn" aria-label="Play placeholder video">▶</button>
-          </div>
-          <div class="card-body">
-            <span class="card-tag">TV</span>
+        <article class="case-item">
+          <div class="case-media"><button class="play-btn" aria-label="Play placeholder video">&#9654;</button></div>
+          <div class="case-body">
+            <span class="meta-tag">TV <span class="ctr">06/06</span></span>
             <h3>Documentary Underscore</h3>
-            <p>Client: Streaming Studio · 2022</p>
+            <p>Full underscore for a single-episode streaming documentary. Client: Streaming Studio &middot; 2022</p>
+            <div class="case-stat">
+              <span class="pill">42MIN</span>
+              <p>Original score across the full runtime.</p>
+            </div>
           </div>
         </article>
 
+      </div>
+
+      <div class="work-more">
+        <span class="num">06</span>
+        <a href="#contact">View All Work <span aria-hidden="true">&#8594;</span></a>
+        <span></span>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="services" id="services">
+  <section class="services on-ink grain" id="services">
     <div class="wrap">
-      <p class="section-label">Services</p>
-      <h2>How I can help</h2>
-      <div class="services-grid">
-        <div class="service">
-          <h3>Custom Scoring</h3>
-          <p>Original music written to picture for commercials, TV, film, and branded content.</p>
+      <div class="eyebrow-dot">What I can help with</div>
+      <div class="services-inner">
+        <ul class="service-list" id="serviceList">
+          <li><button type="button" data-thumb="0">Custom Scoring</button></li>
+          <li><button type="button" data-thumb="1" class="is-active">Broadcast &amp; Sports Themes</button></li>
+          <li><button type="button" data-thumb="2">Sound Design</button></li>
+          <li><button type="button" data-thumb="3">Licensing</button></li>
+          <li><button type="button" data-thumb="4">Mixing &amp; Mastering</button></li>
+        </ul>
+        <div class="service-thumb" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT JOURNEY -->
+  <section class="journey on-ink grain">
+    <div class="wrap">
+      <div class="journey-head">
+        <div class="eyebrow-dot">How it works</div>
+        <h2>Project Journey</h2>
+      </div>
+      <div class="journey-list">
+        <div class="journey-step">
+          <span class="step-index">STEP &middot; 01</span>
+          <div class="step-body">
+            <h3>We start with the brief</h3>
+            <p>You send the spot, the footage, or just the vibe you're after. I ask about tone, timeline, and where it airs, then send a quote and a delivery date.</p>
+            <a class="step-link" href="#contact">Start a project &#8594;</a>
+          </div>
         </div>
-        <div class="service">
-          <h3>Broadcast &amp; Sports Themes</h3>
-          <p>Open/close themes, bumpers, and stingers built to cut through a live broadcast.</p>
+        <div class="journey-step">
+          <span class="step-index">STEP &middot; 02</span>
+          <div class="step-body">
+            <h3>I write and produce</h3>
+            <p>You get a demo pass first, so nothing goes to full production until the direction is right. Revisions are part of the process, not an extra fee.</p>
+            <a class="step-link" href="#work">See the work &#8594;</a>
+          </div>
         </div>
-        <div class="service">
-          <h3>Sound Design</h3>
-          <p>Logo stings, transitions, and hybrid sound design layered with the score.</p>
-        </div>
-        <div class="service">
-          <h3>Licensing</h3>
-          <p>Existing tracks from the catalog, cleared for commercial, TV, and streaming use.</p>
-        </div>
-        <div class="service">
-          <h3>Mixing &amp; Mastering</h3>
-          <p>Broadcast-ready mixes and masters, delivered in whatever stems/format you need.</p>
-        </div>
-        <div class="service">
-          <h3>Fast Turnaround</h3>
-          <p>Revision-friendly workflow built for ad and broadcast deadlines.</p>
+        <div class="journey-step">
+          <span class="step-index">STEP &middot; 03</span>
+          <div class="step-body">
+            <h3>You get broadcast-ready masters</h3>
+            <p>Stems, mixes, and edited lengths, delivered in whatever format your post house or broadcaster needs, on the date we agreed on.</p>
+            <a class="step-link" href="#faq">Read the FAQ &#8594;</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="testimonials">
+  <section class="testimonials on-ink grain">
     <div class="wrap">
-      <p class="section-label">What clients say</p>
+      <span class="eyebrow-bracket">(Real client words)</span>
       <div class="quote-grid">
         <blockquote>
-          <p>“Nick turned around a broadcast-ready theme in two days and it was exactly the energy we needed.”</p>
-          <cite>— Placeholder, Executive Producer</cite>
+          <p>&ldquo;Nick turned around a broadcast-ready theme in two days and it was exactly the energy we needed.&rdquo;</p>
+          <div class="quote-attrib">
+            <div class="byline-photo"></div>
+            <cite><strong>Placeholder Name</strong>Executive Producer</cite>
+          </div>
         </blockquote>
         <blockquote>
-          <p>“Easy to work with, took notes well, and the mix was ready for air on the first pass.”</p>
-          <cite>— Placeholder, Creative Director</cite>
+          <p>&ldquo;Easy to work with, took notes well, and the mix was ready for air on the first pass.&rdquo;</p>
+          <div class="quote-attrib">
+            <div class="byline-photo"></div>
+            <cite><strong>Placeholder Name</strong>Creative Director</cite>
+          </div>
         </blockquote>
       </div>
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="faq on-ink grain" id="faq">
+    <div class="wrap">
+      <div class="eyebrow-dot">Common questions</div>
+      <div class="faq-layout">
+        <div class="faq-list">
+          <div class="faq-item is-open">
+            <button class="faq-q"><span>How far in advance should I book?</span><span class="toggle"></span></button>
+            <div class="faq-a"><p>Broadcast and campaign work usually books 3&ndash;6 weeks out. Rush turnarounds are possible &mdash; ask and I'll tell you straight whether the timeline works.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>What's the typical project investment?</span><span class="toggle"></span></button>
+            <div class="faq-a"><p>It depends on scope, usage, and exclusivity. Most commercial and broadcast projects land in the low-to-mid four figures; I'll send a fixed quote before anything starts.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>Who owns the music once it's delivered?</span><span class="toggle"></span></button>
+            <div class="faq-a"><p>Usage rights transfer per the agreement we sign &mdash; typically a buyout for the campaign's term and territory. I retain the underlying composition unless we agree otherwise.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>Do you work directly with brands, or only through agencies?</span><span class="toggle"></span></button>
+            <div class="faq-a"><p>Both. Agencies get a collaborator who understands post workflows; brands get direct access without a markup in between.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>What if the first draft isn't right?</span><span class="toggle"></span></button>
+            <div class="faq-a"><p>Revisions are built into every quote. We won't move to final mix until the direction is signed off.</p></div>
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="byline-photo" style="margin-bottom:16px;"></div>
+          <p>Got more questions? Talk it through directly.</p>
+          <a class="btn btn-light" href="#contact">Book a call <span class="arrow-chip">&#8599;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <section class="contact on-ink grain" id="contact">
     <div class="wrap contact-inner">
       <div class="contact-copy">
-        <p class="section-label">Get in touch</p>
-        <h2>Have a project in mind?</h2>
-        <p>Tell me about your timeline, the tone you're after, and where the music will run. I'll follow up with next steps and a quote.</p>
+        <div class="eyebrow-dot">Get in touch</div>
+        <h2 style="font-size:clamp(1.8rem,4vw,2.6rem);">Have a project in mind?</h2>
+        <p style="color:var(--on-ink-dim);margin-top:16px;">Tell me about your timeline, the tone you're after, and where the music will run. I'll follow up with next steps and a quote.</p>
         <ul class="contact-details">
           <li><strong>Email:</strong> <a href="mailto:hello@nickcassidymusic.com">hello@nickcassidymusic.com</a></li>
-          <li><strong>Based in:</strong> [City, State]</li>
-          <li><strong>Reel:</strong> <a href="#work">View portfolio</a></li>
+          <li><strong>Based in:</strong> [City, State] &middot; Available for remote sessions worldwide</li>
         </ul>
         <div class="social-row">
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <a href="#" aria-label="YouTube">YouTube</a>
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Instagram">Instagram &#8599;</a>
+          <a href="#" aria-label="YouTube">YouTube &#8599;</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn &#8599;</a>
         </div>
       </div>
       <form class="contact-form" id="contactForm">
-        <label>
-          Name
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          Project type
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Project type
           <select name="project-type">
             <option>Commercial</option>
             <option>TV / Streaming</option>
@@ -257,22 +359,52 @@
             <option>Other</option>
           </select>
         </label>
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-        <p class="form-note" id="formNote" hidden>Thanks! This is a placeholder form — wire it up to your email service or a form backend (e.g. Formspree) to actually receive messages.</p>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn btn-light">Send Message <span class="arrow-chip">&#8599;</span></button>
+        <p class="form-note" id="formNote" hidden>Thanks! This is a placeholder form &mdash; wire it up to a real backend (e.g. Formspree) to actually receive messages.</p>
       </form>
+    </div>
+  </section>
+
+  <!-- CLOSING CTA -->
+  <section class="cta-close">
+    <div class="wrap cta-close-inner">
+      <h2>Let's write a score<br>that <span class="arrow-inline">&#8594;</span> moves people</h2>
+      <a class="btn btn-light" href="#contact">Tell me about your project <span class="arrow-chip">&#8599;</span></a>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <span>© <span id="year"></span> Nick Cassidy Music. All rights reserved.</span>
-    <a href="#top">Back to top ↑</a>
+<footer class="site-footer on-ink">
+  <div class="wrap">
+    <nav class="footer-nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-meta">
+      <div>
+        <span class="eyebrow-bracket">(Studio details)</span>
+        <a class="email" href="mailto:hello@nickcassidymusic.com">hello@nickcassidymusic.com</a>
+        <p>Based in [City, State].<br>Available for remote sessions worldwide.</p>
+      </div>
+      <div>
+        <span class="eyebrow-bracket">(Socials)</span>
+        <a href="#">Instagram &#8599;</a>
+        <a href="#">YouTube &#8599;</a>
+        <a href="#">LinkedIn &#8599;</a>
+      </div>
+    </div>
+    <div class="footer-status">
+      <span id="localTime">[City] &middot; local time --:--</span>
+      <span class="right">
+        <a href="#top">Back to top &#8593;</a><br>
+        <span id="bookingLine">Booking sessions</span>
+      </span>
+    </div>
+    <div class="footer-bottom">&copy; <span id="year"></span> Nick Cassidy Music. All rights reserved.</div>
   </div>
 </footer>
 
